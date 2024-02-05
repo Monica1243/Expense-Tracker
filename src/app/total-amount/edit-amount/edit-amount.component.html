@@ -1,0 +1,13 @@
+<button mat-icon-button style="float: right; margin: 5px" matDialogClose> 
+    <mat-icon >close</mat-icon>    
+</button>
+<mat-dialog-content>
+    <header><h3>Total Amount</h3></header>
+    <p><mat-form-field>
+        <input matInput type="number" [(ngModel)]="enteredAmount" placeholder="Enter Amount">
+    </mat-form-field></p>
+</mat-dialog-content>
+<mat-dialog-actions align="end" style="margin-top: -5%;">
+    <button mat-raised-button class="custom-button" (click)="onAddClick()">Add</button>
+    <button mat-raised-button color="warn" matDialogClose>Cancel</button>
+</mat-dialog-actions>

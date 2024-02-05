@@ -1,0 +1,7 @@
+<app-header></app-header>
+<div style="margin-top: 2%;">
+    <total-amount (updatedBalance)="getDataFromTA($event)"></total-amount>
+</div>
+<div style="margin-top: 1%;">
+    <app-amount [balanceAmount]="amt" ></app-amount>    
+</div>

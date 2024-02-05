@@ -1,0 +1,17 @@
+<button mat-icon-button style="float: right; margin: 5px" matDialogClose> 
+    <mat-icon >close</mat-icon>    
+</button>
+<mat-dialog-content>
+    <header><h3>Edit Spent Items</h3></header>
+    <p><mat-form-field>
+        <input matInput type="text" [(ngModel)]="editedItem" placeholder="Item Name ">
+    </mat-form-field></p>
+    <p><mat-form-field>
+        <input matInput type="number" [(ngModel)]="editedAmount" placeholder="Edit Amount">
+    </mat-form-field></p>
+</mat-dialog-content>
+<mat-dialog-actions align="end" style="margin-top: -5%;">
+    <button mat-raised-button class="custom-button" [mat-dialog-close]="{item: editedItem, amountSpent: editedAmount}" cdkFocusInitial>Add</button>
+    <button mat-raised-button color="warn" matDialogClose>Cancel</button>
+</mat-dialog-actions>
+

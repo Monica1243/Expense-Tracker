@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center">
+    <div class="card border border-5 px-5" style="width: fit-content; border-radius: 20%;">
+        <span class="mx-auto">
+            <div class="card-body">
+                <span>
+                    <p>Balance : {{ balanceAmount }}</p>
+                </span>
+                <span>
+                    <p>Amount Spent : {{ amountSpent }}</p>
+                </span>
+            </div>
+        </span>
+    </div>    
+</div>
+<show-log class="d-flex mx-auto mt-5" (newItemEvent)="updateTotalAmount($event)"></show-log>
